@@ -127,18 +127,18 @@ Dịch nội dung từ file PDF hoặc DOCX.
 ---
 
 
-## 📦 Công nghệ sử dụng
+## Công nghệ sử dụng
 
 **Backend:**
-- [FastAPI](https://fastapi.tiangolo.com/) — Web framework
-- [Hugging Face Transformers](https://huggingface.co/Helsinki-NLP/opus-mt-en-vi) — Mô hình dịch máy MarianMT
-- [PyMuPDF (fitz)](https://pymupdf.readthedocs.io/) — Đọc file PDF
-- [python-docx](https://python-docx.readthedocs.io/) — Đọc file DOCX
-- [PyPDF2](https://pypdf2.readthedocs.io/) — Đọc file PDF (utils)
+- FastAPI — Web framework
+- Hugging Face Transformers — Mô hình dịch máy MarianMT
+- PyMuPDF (fitz) — Đọc file PDF
+- python-docx — Đọc file DOCX
+- PyPDF2 — Đọc file PDF (utils)
 
 **Frontend:**
-- [React 19](https://react.dev/) + [Vite](https://vite.dev/)
-- [Axios](https://axios-http.com/) — Gọi API
+- React 19 + Vite
+- Axios — Gọi API
 
 ---
 
