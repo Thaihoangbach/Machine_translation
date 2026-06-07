@@ -1,10 +1,10 @@
-# 🌐 Machine Translation — English → Vietnamese
+# Machine Translation — English → Vietnamese
 
 Ứng dụng dịch máy tiếng Anh sang tiếng Việt, sử dụng mô hình **Helsinki-NLP/opus-mt-en-vi** từ Hugging Face. Hỗ trợ dịch văn bản thuần và dịch file (PDF, DOCX).
 
 ---
 
-## 📁 Cấu trúc dự án
+## Cấu trúc dự án
 
 ```
 Machine_translation-main/
@@ -30,7 +30,7 @@ Machine_translation-main/
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & chạy
+## Hướng dẫn cài đặt & chạy
 
 ### Yêu cầu hệ thống
 
@@ -76,7 +76,7 @@ Frontend sẽ mở tự động tại: `http://localhost:5173`
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### `POST /translate-text`
 
@@ -116,7 +116,7 @@ Dịch nội dung từ file PDF hoặc DOCX.
 
 ---
 
-## 🎛️ Chế độ dịch (Translation Modes)
+## Chế độ dịch (Translation Modes)
 
 | Mode       | Mô tả                                              |
 |------------|----------------------------------------------------|
@@ -126,21 +126,6 @@ Dịch nội dung từ file PDF hoặc DOCX.
 
 ---
 
-## ⚙️ Cấu hình
-
-Các thông số có thể tuỳ chỉnh qua biến môi trường trong `backend/config.py`:
-
-| Biến môi trường | Giá trị mặc định             | Mô tả                        |
-|-----------------|------------------------------|------------------------------|
-| `MT_MODEL`      | `Helsinki-NLP/opus-mt-en-vi` | Tên model Hugging Face       |
-| `USE_GPU`       | `0` (CPU)                    | Đặt `1` để dùng GPU/CUDA     |
-
-Ví dụ chạy với GPU:
-```bash
-USE_GPU=1 uvicorn main:app --reload
-```
-
----
 
 ## 📦 Công nghệ sử dụng
 
@@ -157,7 +142,7 @@ USE_GPU=1 uvicorn main:app --reload
 
 ---
 
-## 📝 Ghi chú
+## Ghi chú
 
 - Văn bản dài sẽ được tự động chia thành các đoạn tối đa **800 ký tự** trước khi dịch, giúp tránh lỗi vượt quá giới hạn token của model.
 - Model chỉ hỗ trợ dịch **tiếng Anh → tiếng Việt**.
